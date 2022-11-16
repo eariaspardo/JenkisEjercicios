@@ -14,7 +14,7 @@ pipeline {
      
       steps {
           script {			
-           sh "echo 'hola mundo'"
+           cd C:\Users 
         }
       }
     }
@@ -22,14 +22,14 @@ pipeline {
   post {
       always {          
           deleteDir()
-           sh "echo 'fase always'"
+           dir
       }
       success {
-            sh "echo 'fase success'"
+            cd C:\Users\Edilson
         }
 
       failure {
-            sh "echo 'fase failure'"
+            cd C:\Users\Edilson\Downloads
       }
       
   }
